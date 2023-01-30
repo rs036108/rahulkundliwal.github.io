@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleseet.css">
+  <title>My Website</title>
+  <style>
+      .rks{
+          font-size: 25px;color: cyan; text-shadow: 2px 3px 2px 3px black
+      }</style> 
+    <script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+
+function mischandler(){
+return false;
+}
+
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+        
+        
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+
+        
+</script>
+</head>
+
+<body>
+  <!-- Header -->
+  
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1 style="text-shadow: 1px 1px 1px black"><span>R</span>AHUL <span>P</span>HOTOGRAPHY</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul >
+            <li ><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Services</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero" >
+    <div class="hero container">
+      <div><img  src="IMG1.jpg" id="rks" style="	
+	box-shadow: 2px 3px 4px black;position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	border: 0px solid crimson;
+	z-index: -1";    >
+        <h1 style="text-shadow: 2px 2px 2px black">Hello, <span></span></h1>
+        <h1 style="text-shadow: 1px 1px 1px black">My Name is <span></span></h1>
+        <h1 style="text-shadow: 1px 1px 1px black">Rahul Kundliwal <span></span></h1>
+        <a href="#projects" type="button" class="cta" style="text-shadow: 1px 1px 1px black">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Serv<span>i</span>ces</h1>
+        <p> “Satisfaction is a rating. Loyalty is a brand.” – Shep Hyken
+            “Our attitude towards others determines their attitude towards us.” – Earl Nightingale
+          </p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Photography</h2>
+          <p >  <LI class="rks">Studio Photography</LI>
+            <li class="rks">Wedding Photography</li>
+            <li class="rks">Pre-Wedding Photography</li>
+            <li class="rks">Candid Photography</li>
+              <li class="rks">Umbreala Light</li></p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Videography</h2>
+          <LI class="rks">4K Video Shots</LI>
+            <li class="rks">Drone Video Shots</li>
+            <li class="rks">Cenematography</li>
+            <li class="rks">Song Video Shots</li>
+              <li class="rks">Video L.E.D. Wall</li>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Wedding Video Editing</h2>
+          <LI class="rks">1080P Full H.D. Video Edits</LI>
+            <li class="rks">2K Video Edits With Highlight  </li>
+            <li class="rks">4K Video Edits With Teaser </li>
+            <li class="rks">3D Title With 3D Logo</li>
+              <li class="rks">Invetation Video with Teaser</li>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Wedding Albumb  </h2>
+            <LI class="rks">3D Dynamic Albumb</LI>
+            <li class="rks">Kanvera Albumb</li>
+            <li class="rks">Graphic Designing</li>
+            <li class="rks">3D Studio Logo</li>
+              <li class="rks">Albumb Designing</li>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Video Edits |<span>Recent Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1 >3D Presentation</h1>
+            <h2>3D Studio Logo | 3D Title</h2>
+            <p>“If it excites me, there is a good chance it will make a good photograph.”
+
+            !</p>
+          </div>
+          <div class="project-img">
+              <video  style=";background-image: linear-gradient(#695f61,black)" width="100% left"  height="105%"   src="./Video/3D%20demo.mp4"  type="video/mov" controls poster="Photo/T01.png"></video>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Pre-Wedding </h1>
+            <h2>Pre-Wedding | Color, Edit, Title</h2>
+            <p>Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever… It remembers little things, long after you have forgotten everything.</p>
+          </div>
+          <div class="project-img">
+           <video style=";background-image: linear-gradient(#695f61,black)" width="100% left"  height="105%"   src="./Video/Cenematic%20color.mp4"  type="video/mp4" controls></video>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Wedding Promo</h1>
+            <h2>Tresar | Whatsapps Invitation</h2>
+            <p>Photography for me is not looking, it’s feeling. If you can’t feel what you’re looking at, then you’re never going to get others to feel anything when they look at your pictures.!</p>
+          </div>
+          <div class="project-img">
+            <video style=";background-image: linear-gradient(#695f61,black)" width="100% left"  height="105%"   src="./Video/Invitation.mp4" controls ></video>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Color Corection</h1>
+            <h2>Luts Presets | Color gradient</h2>
+            <p>“What makes photography a strange invention is that its primary raw materials are time and light.”!</p>
+          </div>
+          <div class="project-img">
+             <video style=";background-image: linear-gradient(#695f61,black)" width="100% left"  height="105%"   src="./Video/Color%20corection.mp4"  type="video/mp4" controls ></video>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Still Potrait</h1>
+            <h2>Wedding Song | Title</h2>
+            <p>“To me, photography is an art of observation. It’s about finding something interesting in an ordinary place… I’ve found it has little to do with the things you see and everything to do with the way you see them.”!</p>
+          </div>
+          <div class="project-img">
+             <video style=";background-image: linear-gradient(#695f61,black)" width="100% left"  height="105%"   src="./Video/Still%20Song.mp4" controls ></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="rahulphoto.jpg" alt="Rahul Kundliwal" style="left: -45px;
+		top: 34px;
+		height: 98%;
+		width: 98%;border: 3px solid cyan; box-shadow: 2px 2px 2px 2px black">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>A Photographer<span style="color: crimson"> & </span> Graphics Designer</h2>
+        <p style="font-size: 15px" >Hellow,I am Rahul Kumar Saini. I am  Student of C.S.E. & want to be a professional programmer and Data analyst.I am Professionl in Photoshop and Edius X with Work Experience of 6 Year at Personal shop</p>
+        <a href="#" class="cta">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+91 7895402542</h2>
+            <h2>+91 8958965562</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>rs036108@gmail.com</h2>
+          
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Hasanpur, Rerha, Road Hakampur</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>R</span>ahul <span>k</span>undliwal</h1>
+      </div>
+      <h2 >Your Complete Photography Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/Kundliwal/"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/rks_rahul_kundliwal/"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://twitter.com/RKundliwal"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.youtube.com/channel/UCCA5zYihHkoQklTv8-zfwbA"><img src="https://img.icons8.com/bubbles/100/000000/youtube.png" /></a>
+        </div>
+      </div>
+      <p>Copyright � 2022 Rahul. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./javascript.js"></script>
+</body>
+
+</html>
